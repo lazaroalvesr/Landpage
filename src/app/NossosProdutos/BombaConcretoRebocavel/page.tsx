@@ -28,10 +28,10 @@ function NossosProdutos() {
   }
 
   return (
-    <section className='max-w-5xl m-auto mt-20 mb-12'>
-      <div className='grid lg:grid-cols-2 grid-cols-1 ml-6 lg:ml-0'>
+    <section className='max-w-5xl m-auto mt-20'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0'>
         <div>
-          <div className='ml-12'>
+          <div className='ml-16'>
             <Image
               src={imagemPrincipal}
               alt="Bomba de concreto rebocavel"
@@ -57,7 +57,7 @@ function NossosProdutos() {
           <div>
             <h1 className='text-3xl font-semibold'>Carretinha Rebocável</h1>
           </div>
-          <ul className='ml-2 mt-6'>
+          <ul className='ml-0 mt-6'>
             <li className='flex text-xl'><span className='pr-2'><TiInputChecked size={25} /></span>200 bar de pressão</li>
             <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Camisa 180 de diâmetro</li>
             <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>0.75 de comprimento</li>
