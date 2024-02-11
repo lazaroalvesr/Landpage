@@ -33,7 +33,7 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <div className="lg:ml-96 -ml-4 pl-4 items-center pt-6 relative">
+          <div className="lg:ml-80 -ml-4 pl-4 items-center pt-6 relative">
             <ul className={`lg:flex gap-4 lg:static lg:h-auto ${ativaMenu ? 'absolute bg-white -ml-32 left-0 w-[398px] text-center top-20 h-96 pt-32 -mt-4 flex-col z-50' : "h-0 overflow-hidden"}`}>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
                 <Link href={'/'}>
@@ -46,8 +46,13 @@ export default function Header() {
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900  font-semibold">
+                <Link href={'/NossosProdutos'}>
+                  Nossos Produtos
+                </Link>
+              </li>
+              <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
                 <Link href={'/'}>
-                  Nossos Serviços
+                  Nossos Clientes
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">

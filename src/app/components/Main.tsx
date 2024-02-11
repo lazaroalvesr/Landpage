@@ -1,8 +1,21 @@
+'use client'
+
 import Image from 'next/image'
+import Link from 'next/link';
+import { FormEvent } from 'react';
 import { ImCheckboxChecked } from "react-icons/im";
 
 
 function Main() {
+  const handleWhatsAppLink = (e: FormEvent) => {
+    e.preventDefault();
+    const phoneNumber = '5533999267947';
+    const message = encodeURIComponent('Olá! Vim pelo site Arruda Bombas.');
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.location.href = whatsappUrl;
+  }
+
+
   return (
     <div>
       <div className='relative mb-12'>
@@ -14,9 +27,9 @@ function Main() {
                 <p className='text-gray-50 lg:pt-8 pt-12 pb-4 lg:pb-0 w-80 lg:w-[470px]'>A transformação começa aqui! Com nossa Bomba de Concreto, da base ao acabamento, asseguramos a excelência para uma construção segura e duradoura.</p>
               </div>
               <button className='h-14 p-3 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform'>
-                <p className='text-gray-50 flex ml-2 lg:text-2xl'>
+                <Link onClick={handleWhatsAppLink} href="WhatsApp" className='text-gray-50 flex ml-2 lg:text-2xl'>
                   <span className='pr-2 mt-1'><ImCheckboxChecked color='#00ffff' /></span>
-                  Adquira já a sua bomba de concreto.</p>
+                  Adquira já a sua bomba de concreto.</Link>
               </button>
             </div>
             <div className='max-w-4xl lg:mt-56 -mt-32'>
