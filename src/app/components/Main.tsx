@@ -11,7 +11,7 @@ function Main() {
 
   return (
     <div>
-      <div className='relative mb-12'>
+      <div className='relative'>
         <div className='absolute bg-gray-900/60 w-full h-[690px] lg:h-[700px]'>
           <div className='flex lg:flex-row flex-col m-auto justify-center gap-44 lg:ml-32'>
             <div className='max-w-4xl lg:mt-32 mt-8 ml-3'>
