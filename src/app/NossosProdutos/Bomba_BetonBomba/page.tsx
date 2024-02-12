@@ -1,9 +1,9 @@
 'use client'
 
+import Items from '@/app/components/Items';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FormEvent, useState } from 'react';
-import { TiInputChecked } from "react-icons/ti";
 
 
 function NossosProdutos() {
@@ -12,6 +12,22 @@ function NossosProdutos() {
   const handleThumbnailClick = (novaImagem: string) => {
     setImagemPrincipal(novaImagem);
   };
+
+  const items = [
+    "200 bar de pressão",
+    "Camisa 180 de diâmetro",
+    "0.75 de comprimento",
+    "Pistão 0.75 de comprimento",
+    "Potência equivalente a P500",
+    "Bombeamento horizontal 100 metros",
+    "20 metros vertical",
+    "Brita 0 e 1",
+    "Coxo com sistema tubo S",
+    "Painel PP",
+    "Sistema de bombeamento automatizado",
+    "Radiador de óleo",
+    "Capacidade 25 cúbicos por hora"
+  ]
 
   const imagensGaleria = [
     '/img/img_pagina_inicial/BombaConcreto_Betonbomba.png'
@@ -29,7 +45,7 @@ function NossosProdutos() {
     <section className='max-w-5xl m-auto mt-20'>
       <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0 gap-12'>
         <div className='mt-24'>
-          <div className='w-[600px] ml-5'>
+          <div className='lg:w-[600px] ml-5'>
             <Image
               src={imagemPrincipal}
               alt="Bomba de concreto rebocavel"
@@ -57,31 +73,9 @@ function NossosProdutos() {
             <h1 className='text-3xl font-semibold'>Betonbomba </h1>
           </div>
           <ul className='ml-0 mt-6'>
-            <li className='flex text-xl'><span className='pr-2'><TiInputChecked size={25} /></span>200 bar de pressão
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Camisa 180 de diâmetro
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>0.75 de comprimento
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Pistão 0.75 de comprimento
-            </li>
-            <li className='flex text-xl'><span className='pr-2 ' ><TiInputChecked size={25} /></span>Potência equivalente a P500
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Bombeamento horizontal 100 metros
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>20 metros vertical
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Brita 0 e 1
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Coxo com sistema tubo S
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Painel PP
-            </li>
-            <li className='flex text-xl'><span className='pr-2' ><TiInputChecked size={25} /></span>Sistema de bombeamento automatizado
-            </li>
-            <li className='flex text-xl'><span className='pr-2'  ><TiInputChecked size={25} /></span>Radiador de óleo
-            </li>
-            <li className='flex text-xl'><span className='pr-2 ' ><TiInputChecked size={25} /></span>Capacidade 25 cúbicos por hora</li>
+            {items.map((items) => (
+              <Items key='items' items={items} />
+            ))}
           </ul>
           <div className='flex lg:flex-row flex-col'>
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>
