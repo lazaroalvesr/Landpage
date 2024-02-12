@@ -6,14 +6,15 @@ import ButtonImg from '../components/ButtonImg'
 function NossosProdutos() {
   return (
     <section className='max-w-5xl m-auto'>
-      <div className='mt-12 grid lg:grid-cols-3  justify-center gap-16 '>
+      <div className='mt-12 grid lg:grid-cols-3  justify-center lg:gap-16 gap-8'>
         <div className='border border-gray-400 w-80 rounded-md'>
           <div className='m-auto p-4'>
             <div className='ml-14'>
               <ImgComponent
-                img='/img/carretinha_rebocavel.png'
+                img='/img/img_pagina_inicial/carretinha_rebocavel.png'
                 alt='Carretinha Rebocável'
-
+                width={170}
+                height={120}
               />
             </div>
             <div className='ml-0'>
@@ -27,93 +28,81 @@ function NossosProdutos() {
 
         <div className='border border-gray-400 w-80 rounded-md'>
           <div className='m-auto p-4'>
-            <div className='ml-14'>
+            <div className='ml-8'>
               <ImgComponent
-                img='/img/carretinha_rebocavel.png'
-                alt='Carretinha Rebocável'
-
+                img='/img/img_pagina_inicial/BombaConcreto_Carretinha_pequena.png'
+                alt='Bomba Concreto Carretinha Pequena'
+                width={235}
+                height={120}
               />
             </div>
-            <div className='ml-0'>
+            <div>
               <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
-                url='google.com'
+                Titulo='Bomba Concreto Carretinha Pequena'
+                url='/NossosProdutos/Carretinha_Pequena'
               />
             </div>
           </div>
         </div>
 
         <div className='border border-gray-400 w-80 rounded-md'>
-          <div className='m-auto p-4'>
+          <div className='m-auto mt-10 p-4'>
             <div className='ml-14'>
               <ImgComponent
-                img='/img/carretinha_rebocavel.png'
-                alt='Carretinha Rebocável'
-
+                img='/img/img_pagina_inicial/BombaConcreto_P700.png'
+                alt='Bomba de Concreto P700'
+                width={190}
+                height={120}
               />
             </div>
-            <div className='ml-0'>
+            <div className='mt-[45px]'>
               <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
-                url='google.com'
+                Titulo='P700'
+                url='/NossosProdutos/Bomba_Concreto_P700'
               />
             </div>
           </div>
         </div>
 
         <div className='border border-gray-400 w-80 rounded-md'>
-          <div className='m-auto p-4'>
+          <div className='m-auto mt-24 p-4'>
             <div className='ml-14'>
               <ImgComponent
-                img='/img/carretinha_rebocavel.png'
-                alt='Carretinha Rebocável'
-
+                img='/img/img_pagina_inicial/BombaConcretoBetoneira.png'
+                alt='Bomba Concreto com 2 Betoneira'
+                width={380}
+                height={120}
               />
             </div>
-            <div className='ml-0'>
+            <div className='mt-[48px]'>
               <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
-                url='google.com'
+                Titulo='Bomba Concreto com Betoneira'
+                url='/NossosProdutos/Bomba_Concreto_Betoneira'
               />
             </div>
           </div>
         </div>
 
         <div className='border border-gray-400 w-80 rounded-md'>
-          <div className='m-auto p-4'>
+          <div className='m-auto mt-6 p-4'>
             <div className='ml-14'>
               <ImgComponent
-                img='/img/carretinha_rebocavel.png'
-                alt='Carretinha Rebocável'
-
+                img='/img/img_pagina_inicial/BombaConcreto_Betonbomba.png'
+                alt='Bomba Concreto Betonbomba'
+                width={180}
+                height={120}
               />
             </div>
-            <div className='ml-0'>
+            <div className='mt-[70px]'>
               <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
-                url='google.com'
+                Titulo='Bomba Concreto Betonbomba'
+                url='/NossosProdutos/Bomba_BetonBomba'
               />
             </div>
           </div>
         </div>
 
-        <div className='border border-gray-400 w-80 rounded-md'>
-          <div className='m-auto p-4'>
-            <div className='ml-14'>
-              <ImgComponent
-                img='/img/carretinha_rebocavel.png'
-                alt='Carretinha Rebocável'
 
-              />
-            </div>
-            <div className='ml-0'>
-              <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
-                url='google.com'
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

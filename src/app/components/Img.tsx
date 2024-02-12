@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
 import Image from "next/image";
 
-interface ImageComponent {
-  img: string
-  alt: string
+interface ImageComponentProps {
+  img: string;
+  alt: string;
+  width?: number;
+  height?: number;
 }
 
-function ImgComponent({ img, alt }: ImageComponent) {
+function ImgComponent({ img, alt, width, height }: ImageComponentProps) {
   return (
     <div>
       <div>
@@ -14,13 +16,13 @@ function ImgComponent({ img, alt }: ImageComponent) {
           <Image
             src={img}
             alt={alt}
-            width={170}
-            height={90}
+            width={width}
+            height={height}
           />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ImgComponent
+export default ImgComponent;
