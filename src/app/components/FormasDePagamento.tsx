@@ -18,7 +18,7 @@ function FormasDePagamento() {
           <div>
             <h1 className='text-xl font-bold pb-4'>Duvidas</h1>
             <p>Nossos meios de contato:</p>
-            <p>suporte@gmail.com</p>
+            <p>pedrohenriquearrudaa@gmail.com</p>
             <p>(11) 999-9999999</p>
           </div>
         </div>

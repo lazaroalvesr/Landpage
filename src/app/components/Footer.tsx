@@ -10,8 +10,8 @@ export default function Footer() {
 
   const handleWhatsAppLink = (e: FormEvent) => {
     e.preventDefault();
-    const phoneNumber = '5533999267947';
-    const message = encodeURIComponent('Olá, Tudo bem? vim pelo site e gostaria de fazer um orçamento!');
+    const phoneNumber = '5519974105318';
+    const message = encodeURIComponent('Olá, Tudo bem? vim pelo site Arruda Bombas e gostaria de fazer um orçamento!');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = whatsappUrl;
   }
