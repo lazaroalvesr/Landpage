@@ -1,9 +1,9 @@
 'use client'
 
+import Button from '@/app/components/Button';
 import Items from '@/app/components/Items';
 import Image from 'next/image';
-import Link from 'next/link';
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 
 
 function NossosProdutos() {
@@ -34,13 +34,6 @@ function NossosProdutos() {
     '/img/img_pagina_inicial/BombaConcreto_P700.png',
   ];
 
-  const handleWhatsAppLink = (e: FormEvent) => {
-    e.preventDefault();
-    const phoneNumber = '5533999267947';
-    const message = encodeURIComponent('Olá! Vim pelo site Arruda Bombas.');
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.location.href = whatsappUrl;
-  }
 
   return (
     <section className='max-w-5xl m-auto mt-20'>
@@ -82,9 +75,9 @@ function NossosProdutos() {
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>
               R$ 150.000,00
             </button>
-            <Link className='w-60 text-center mt-6 lg:ml-2 ml-8 text-white p-4 rounded-md bg-blue-500' href="WhatsApp" onClick={handleWhatsAppLink}>
-              Encomende a sua!
-            </Link>
+            <div className='mt-9'>
+              <Button />
+            </div>
           </div>
         </div>
       </div>
