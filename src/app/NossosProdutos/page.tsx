@@ -19,7 +19,7 @@ function NossosProdutos() {
             </div>
             <div className='ml-0'>
               <ButtonImg
-                Titulo='Bomba de Conreto Rebocável'
+                Titulo='Bomba de Concreto Rebocável'
                 url='/NossosProdutos/BombaConcretoRebocavel'
               />
             </div>
@@ -31,14 +31,14 @@ function NossosProdutos() {
             <div className='ml-8'>
               <ImgComponent
                 img='/img/img_pagina_inicial/BombaConcreto_Carretinha_pequena.png'
-                alt='Bomba Concreto Carretinha Pequena'
+                alt='Bomba de Concreto Carretinha Pequena'
                 width={235}
                 height={120}
               />
             </div>
-            <div>
+            <div className='mt-5'>
               <ButtonImg
-                Titulo='Bomba Concreto Carretinha Pequena'
+                Titulo='Bomba de Concreto Carretinha Pequena'
                 url='/NossosProdutos/Carretinha_Pequena'
               />
             </div>
@@ -55,7 +55,7 @@ function NossosProdutos() {
                 height={120}
               />
             </div>
-            <div className='mt-[45px]'>
+            <div className='mt-[69px]'>
               <ButtonImg
                 Titulo='P700'
                 url='/NossosProdutos/Bomba_Concreto_P700'
@@ -69,14 +69,14 @@ function NossosProdutos() {
             <div className='ml-14'>
               <ImgComponent
                 img='/img/img_pagina_inicial/BombaConcretoBetoneira.png'
-                alt='Bomba Concreto com 2 Betoneira'
+                alt='Bomba de Concreto com 2 Betoneira'
                 width={380}
                 height={120}
               />
             </div>
-            <div className='mt-[48px]'>
+            <div className='mt-[76px]'>
               <ButtonImg
-                Titulo='Bomba Concreto com Betoneira'
+                Titulo='Bomba de Concreto com Betoneira'
                 url='/NossosProdutos/Bomba_Concreto_Betoneira'
               />
             </div>
@@ -88,14 +88,14 @@ function NossosProdutos() {
             <div className='ml-14'>
               <ImgComponent
                 img='/img/img_pagina_inicial/BombaConcreto_Betonbomba.png'
-                alt='Bomba Concreto Betonbomba'
+                alt='Bomba de Concreto Betonbomba'
                 width={180}
                 height={120}
               />
             </div>
             <div className='mt-[70px]'>
               <ButtonImg
-                Titulo='Bomba Concreto Betonbomba'
+                Titulo='Bomba de Concreto Betonbomba'
                 url='/NossosProdutos/Bomba_BetonBomba'
               />
             </div>

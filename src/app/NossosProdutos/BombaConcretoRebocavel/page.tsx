@@ -2,6 +2,7 @@
 
 import Button from '@/app/components/Button';
 import Items from '@/app/components/Items';
+import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -69,8 +70,8 @@ function NossosProdutos() {
             <h1 className='text-3xl font-semibold'>Carretinha Rebocável</h1>
           </div>
           <ul className='ml-0 mt-6'>
-            {items.map((items, index) => (
-              <Items key={index} items={items} />
+            {items.map((items) => (
+              <Items key={uuidv4()} items={items} />
             ))}
           </ul>
           <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
@@ -78,7 +79,7 @@ function NossosProdutos() {
               R$ 170.000,00
             </button>
             <div className='mt-9 ml-7 lg:ml-0'>
-              <Button />
+              <Button itemName='Bomba de Concreto Carretinha Rebocável' />
             </div>
           </div>
         </div>
