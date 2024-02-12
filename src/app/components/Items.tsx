@@ -2,7 +2,7 @@ import React from 'react'
 import { TiInputChecked } from 'react-icons/ti'
 
 interface ItemsProps {
-  key: string
+  key: number
   items: string
 }
 

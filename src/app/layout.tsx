@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-Br">
+    <html lang="pt-BR">
+      <head>
+        <link rel="shortcut icon" href="/img/icone10.png" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <Header />
         {children}

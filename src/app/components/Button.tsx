@@ -5,7 +5,7 @@ function Button() {
   const handleWhatsAppLink = (e: FormEvent) => {
     e.preventDefault();
     const phoneNumber = '5533999267947';
-    const message = encodeURIComponent('Olá! Vim pelo site Arruda Bombas.');
+    const message = encodeURIComponent('Olá, Tudo bem? vim pelo site e gostaria de fazer um orçamento!');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = whatsappUrl;
   }

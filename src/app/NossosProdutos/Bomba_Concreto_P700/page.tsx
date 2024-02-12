@@ -67,8 +67,8 @@ function NossosProdutos() {
             <h1 className='text-3xl font-semibold'>P 700</h1>
           </div>
           <ul className='ml-0 mt-6'>
-            {items.map((items) => (
-              <Items key={items} items={items} />
+            {items.map((items, index) => (
+              <Items key={index} items={items} />
             ))}
           </ul>
           <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
