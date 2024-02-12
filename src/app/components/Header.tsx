@@ -13,6 +13,10 @@ export default function Header() {
     setAtivaMenu((ativaMenu) => !ativaMenu);
   }
 
+  function handleItemClick() {
+    setAtivaMenu(false);
+  }
+
   return (
     <div className="">
       <header className="pb-3 lg:max-w-6xl lg:m-auto mt-4 flex lg:items-center lg:justify-between ">
@@ -36,27 +40,27 @@ export default function Header() {
           <div className="lg:ml-80 -ml-4 pl-4 items-center pt-6 relative">
             <ul className={`lg:flex gap-4 lg:static lg:h-auto ${ativaMenu ? 'absolute bg-white -ml-32 left-0 w-[420px] text-center top-20 h-96 pt-32 -mt-4 flex-col z-50' : "h-0 overflow-hidden"}`}>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
-                <Link href={'/'}>
+                <Link href={'/'} onClick={handleItemClick}>
                   Home
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
-                <Link href={'/dasboard'}>
+                <Link href={'/dasboard'} onClick={handleItemClick}>
                   Sobre Nós
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900  font-semibold">
-                <Link href={'/NossosProdutos'}>
+                <Link href={'/NossosProdutos'} onClick={handleItemClick}>
                   Nossos Produtos
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
-                <Link href={'/'}>
+                <Link href={'/'} onClick={handleItemClick}>
                   Nossos Clientes
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
-                <Link href={'/'}>
+                <Link href={'/'} onClick={handleItemClick}>
                   Fale Conosco
                 </Link>
               </li>
@@ -67,4 +71,3 @@ export default function Header() {
     </div>
   );
 }
-
