@@ -58,7 +58,7 @@ function NossosProdutos() {
                   alt={`Imagem ${index + 1}`}
                   width={80}
                   height={90}
-                  className="cursor-pointer ml-3 lg:w-20 w-14"
+                  className="cursor-pointer lg:ml-3 ml-1 lg:w-20 w-14"
                 />
               </div>
             ))}
@@ -73,11 +73,11 @@ function NossosProdutos() {
               <Items key={items} items={items} />
             ))}
           </ul>
-          <div className='flex lg:flex-row flex-col'>
+          <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>
               R$ 170.000,00
             </button>
-            <div className='mt-9'>
+            <div className='mt-9 ml-7 lg:ml-0'>
               <Button />
             </div>
           </div>

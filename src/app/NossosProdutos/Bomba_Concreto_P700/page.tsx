@@ -71,11 +71,11 @@ function NossosProdutos() {
               <Items key={items} items={items} />
             ))}
           </ul>
-          <div className='flex lg:flex-row flex-col'>
+          <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>
               R$ 150.000,00
             </button>
-            <div className='mt-9'>
+            <div className='mt-9 ml-7 lg:ml-0'>
               <Button />
             </div>
           </div>
