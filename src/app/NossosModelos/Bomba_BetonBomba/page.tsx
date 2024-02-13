@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 
 function NossosProdutos() {
-  const [imagemPrincipal, setImagemPrincipal] = useState('/img/img_pagina_inicial/BombaConcreto_Betonbomba.png');
+  const [imagemPrincipal, setImagemPrincipal] = useState('/img/Bomba_BetonBomba/betombomba_01.jpg');
 
   const handleThumbnailClick = (novaImagem: string) => {
     setImagemPrincipal(novaImagem);
@@ -31,7 +31,13 @@ function NossosProdutos() {
   ]
 
   const imagensGaleria = [
-    '/img/img_pagina_inicial/BombaConcreto_Betonbomba.png'
+    '/img/Bomba_BetonBomba/betombomba_01.jpg',
+    '/img/Bomba_BetonBomba/betombomba_02.jpg',
+    '/img/Bomba_BetonBomba/betombomba_03.jpg',
+    '/img/Bomba_BetonBomba/betombomba_04.jpg',
+    '/img/Bomba_BetonBomba/betombomba_05.jpg',
+    '/img/Bomba_BetonBomba/betombomba_06.jpg',
+    '/img/Bomba_BetonBomba/betombomba_07.jpg',
   ];
 
   return (
@@ -42,20 +48,20 @@ function NossosProdutos() {
             <Image
               src={imagemPrincipal}
               alt="Bomba de concreto rebocavel"
-              width={300}
+              width={320}
               height={90}
               className=''
             />
           </div>
-          <div className=" lg:-ml-16 grid grid-cols-4  gap-4 mt-4">
+          <div className=" lg:-ml-16 grid lg:grid-cols-4 grid-cols-3  gap-4 mt-4">
             {imagensGaleria.map((imagem, index) => (
-              <div className=' border  border-black p-2 rounded-md' key={index} onClick={() => handleThumbnailClick(imagem)}>
+              <div className='w-24 lg:w-32 border border-black p-2 rounded-md' key={index} onClick={() => handleThumbnailClick(imagem)}>
                 <Image
                   src={imagem}
                   alt={`Imagem ${index + 1}`}
                   width={80}
                   height={90}
-                  className="cursor-pointer ml-3"
+                  className="cursor-pointer lg:ml-3"
                 />
               </div>
             ))}
@@ -68,14 +74,14 @@ function NossosProdutos() {
           <ul className='ml-0 mt-6'>
             {items.map((items, index) => (
               <Items key={uuidv4()} items={items} />
-              ))}
+            ))}
           </ul>
           <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>
               R$ 150.000,00
             </button>
             <div className='mt-9 ml-7 lg:ml-0'>
-              <Button itemName='Bomba de Concreto BetonBomba'/>
+              <Button itemName='Bomba de Concreto BetonBomba' />
             </div>
           </div>
         </div>

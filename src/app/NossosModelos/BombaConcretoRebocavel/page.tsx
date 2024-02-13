@@ -35,7 +35,11 @@ function NossosProdutos() {
     '/img/Bomba_Rebocavel/BombaRebocavel_2.jpg',
     '/img/Bomba_Rebocavel/BombaRebocavel_3.jpg',
     '/img/Bomba_Rebocavel/BombaRebocavel_4.jpg',
+    '/img/Bomba_Rebocavel/carretinha_rebocavel_01.jpg',
+    '/img/Bomba_Rebocavel/carretinha_rebocavel_02.jpg',
+    '/img/Bomba_Rebocavel/carretinha_rebocavel_03.jpg',
   ];
+
 
 
   return (

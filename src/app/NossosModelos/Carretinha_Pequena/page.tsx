@@ -32,30 +32,35 @@ function NossosProdutos() {
 
   const imagensGaleria = [
     '/img/img_pagina_inicial/BombaConcreto_Carretinha_pequena.png',
+    '/img/Carretinha_Pequena/carretinha_pequena_02.jpg',
+    '/img/Carretinha_Pequena/carretinha_pequena_01.jpg',
+    '/img/Carretinha_Pequena/carretinha_pequena_02.jpg',
+    '/img/Carretinha_Pequena/carretinha_pequena_03.jpg',
+    '/img/Carretinha_Pequena/carretinha_pequena_04.jpg',
   ];
 
   return (
     <section className='max-w-5xl m-auto mt-20'>
       <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0 gap-12'>
         <div className='mt-24'>
-          <div className='lg:w-[600px] '>
+          <div className='lg:w-[600px] w-80'>
             <Image
               src={imagemPrincipal}
               alt="Carretinha pequena"
-              width={340}
+              width={440}
               height={90}
               className=''
             />
           </div>
-          <div className=" lg:-ml-16 grid grid-cols-4  gap-4 mt-4">
+          <div className=" lg:-ml-16 grid-cols-3 grid lg:grid-cols-4 gap-4 mt-4">
             {imagensGaleria.map((imagem, index) => (
-              <div className=' border  border-black p-2 rounded-md' key={index} onClick={() => handleThumbnailClick(imagem)}>
+              <div className=' -ml-2 w-24 p-4 lg:w-32 lg:-ml-0 border border-black lg:p-2 rounded-md' key={index} onClick={() => handleThumbnailClick(imagem)}>
                 <Image
                   src={imagem}
                   alt={`Imagem ${index + 1}`}
                   width={80}
                   height={90}
-                  className="cursor-pointer ml-3"
+                  className="cursor-pointer lg:ml-3 -ml-1"
                 />
               </div>
             ))}
@@ -68,7 +73,7 @@ function NossosProdutos() {
           <ul className='ml-0 mt-6'>
             {items.map((items, index) => (
               <Items key={uuidv4()} items={items} />
-              ))}
+            ))}
           </ul>
           <div className='flex lg:flex-row flex-col ml-8 lg:ml-0'>
             <button className='w-72 text-xl font-semibold border border-gray-900 p-2 rounded-md mt-6'>

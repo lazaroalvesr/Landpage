@@ -24,7 +24,7 @@ function NossosModelos() {
             <div className='ml-0'>
               <ButtonImg
                 Titulo='Bomba de Concreto Rebocável'
-                url='/NossosProdutos/BombaConcretoRebocavel'
+                url='/NossosModelos/BombaConcretoRebocavel'
               />
             </div>
           </div>
@@ -43,26 +43,26 @@ function NossosModelos() {
             <div className='mt-5'>
               <ButtonImg
                 Titulo='Bomba de Concreto Carretinha Pequena'
-                url='/NossosProdutos/Carretinha_Pequena'
+                url='/NossosModelos/Carretinha_Pequena'
               />
             </div>
           </div>
         </div>
 
         <div className='border border-gray-400 w-80 rounded-md'>
-          <div className='m-auto mt-10 p-4'>
-            <div className='ml-14'>
+          <div className='m-auto mt-16 p-4'>
+            <div className='ml-0 w-[310px]'>
               <ImgComponent
-                img='/img/img_pagina_inicial/BombaConcreto_P700.png'
+                img='/img/img_pagina_inicial/P700_1.png'
                 alt='Bomba de Concreto P700'
-                width={190}
+                width={390}
                 height={120}
               />
             </div>
-            <div className='mt-[69px]'>
+            <div className='mt-[120px]'>
               <ButtonImg
                 Titulo='P700'
-                url='/NossosProdutos/Bomba_Concreto_P700'
+                url='/NossosModelos/Bomba_Concreto_P700'
               />
             </div>
           </div>
@@ -70,18 +70,18 @@ function NossosModelos() {
 
         <div className='border border-gray-400 w-80 rounded-md'>
           <div className='m-auto mt-24 p-4'>
-            <div className='ml-14'>
+            <div className=' w-[300px]'>
               <ImgComponent
-                img='/img/img_pagina_inicial/BombaConcretoBetoneira.png'
+                img='/img/img_pagina_inicial/Bomba_Betoneira.png'
                 alt='Bomba de Concreto com 2 Betoneira'
-                width={380}
+                width={420}
                 height={120}
               />
             </div>
             <div className='mt-[76px]'>
               <ButtonImg
                 Titulo='Bomba de Concreto com Betoneira'
-                url='/NossosProdutos/Bomba_Concreto_Betoneira'
+                url='/NossosModelos/Bomba_Concreto_Betoneira'
               />
             </div>
           </div>
@@ -89,18 +89,18 @@ function NossosModelos() {
 
         <div className='border border-gray-400 w-80 rounded-md'>
           <div className='m-auto mt-6 p-4'>
-            <div className='ml-14'>
+            <div className='ml-6'>
               <ImgComponent
-                img='/img/img_pagina_inicial/BombaConcreto_Betonbomba.png'
+                img='/img/img_pagina_inicial/BetomBomba.png'
                 alt='Bomba de Concreto Betonbomba'
-                width={180}
+                width={240}
                 height={120}
               />
             </div>
-            <div className='mt-[70px]'>
+            <div>
               <ButtonImg
                 Titulo='Bomba de Concreto Betonbomba'
-                url='/NossosProdutos/Bomba_BetonBomba'
+                url='/NossosModelos/Bomba_BetonBomba'
               />
             </div>
           </div>

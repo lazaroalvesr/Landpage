@@ -7,7 +7,7 @@ function SobreNos() {
       <div>
         <Head title="Sobre Nós | Arruda Bombas" />
       </div>
-      <div className='max-w-6xl m-auto mt-12'>
+      <div className='max-w-6xl m-auto mt-12 p-4 lg:p-0'>
         <p className='pb-6'>
           Bem-vindo à <span className='font-bold'>Arruda Bombas</span>, sua parceira confiável em soluções de bombeamento de concreto. Com uma sólida trajetória e um compromisso inabalável, destacamo-nos como líderes do setor, oferecendo serviços de alta qualidade que superam as expectativas dos nossos clientes.
         </p>
