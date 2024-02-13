@@ -4,6 +4,14 @@
 
 @media (max-width: 640px) {
   .h-screen img {
-    height: 590px; /* Defina a altura desejada para dispositivos móveis */
+    height: 620px; /* Defina a altura desejada para dispositivos móveis */
   }
+}
+
+.slide {
+  transition: transform 9s cubic-bezier(1.4, 0, 0.2, 1);
+}
+
+.slide:hover {
+  transform: scale(1.1);
 }

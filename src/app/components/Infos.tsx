@@ -5,15 +5,29 @@ import Image from 'next/image'
 function Demonstracao() {
   return (
     <section>
-      <div className='max-w-4xl m-auto lg:mt-72 mt-40 '>
+      <div className='max-w-4xl m-auto lg:mt-66 mt-40 '>
         <div className='text-center'>
-          <h1 className='lg:text-4xl text-3xl'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
+          <h1 className='lg:text-4xl text-3xl w-[400px] w-full'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
         </div>
-        <div className='flex lg:flex-row flex-col ml-16 lg:ml-0 gap-12 mt-12 justify-center'>
-          <div className='w-72 h-72 bg-red-600'></div>
-          <div className='w-72 h-72 bg-red-600'></div>
+        <div className='flex lg:flex-row flex-col ml-10 lg:ml-12 lg:gap-12 mt-12 justify-center'>
+          <div className='lg:w-[440px] h-72 '>
+            <Image
+              src="/img/img_pagina_inicial/bomba_Betoneira.jpg"
+              alt='Bomba de concreto com 2 Betoneira'
+              width={350}
+              height={120}
+            />
+          </div>
+          <div className='lg:w-[440px] h-72 '>
+            <Image
+              src="/img/img_pagina_inicial/Bomba_Betonbomba.png"
+              alt='Bomba de concreto Betonbomba'
+              width={320}
+              height={120}
+            />
+          </div>
         </div>
-        <div className='lg:ml-56 ml-12'>
+        <div className='lg:ml-56 ml-12 mt-10'>
           <ButtonEncomendar />
         </div>
         <div className='max-w-xl m-auto w-12  flex lg:gap-32 gap-20 ml-5 lg:ml-56 mt-12'>

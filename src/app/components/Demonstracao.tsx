@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Demonstracao() {
   return (
     <section>
-      <div className='max-w-4xl m-auto lg:mt-28 -mt-14 flex lg:flex-row flex-col gap-60'>
+      <div className='max-w-4xl m-auto lg:mt-28 -mt-40 flex lg:flex-row flex-col gap-40'>
         <div className='lg:w-[400px] text-center'>
           <h1 className='lg:text-4xl text-3xl w-[400px] '><span className='text-blue-500'>EXCELÊNCIA GARANTIDA</span> BOMBAS DE CONCRETO PARA OBRAS DE QUALIDADE</h1>
           <p className='pt-12 text-2xl'>Bomba de Concreto</p>
@@ -18,8 +19,15 @@ function Demonstracao() {
           </p>
         </div>
         <div>
-          <div className='lg:w-[400px] w-[360px] bg-red-600 h-[400px] ml-6 lg:ml-0'>
-
+          <div className=''>
+            <div className='lg:w-[620px] w-96 ml-2 lg:ml-0'>
+              <Image
+                src="/img/Bomba_Demonstração.jpg"
+                alt='Bomba P700'
+                width={520}
+                height={42}
+              />
+            </div>
           </div>
         </div>
       </div>
