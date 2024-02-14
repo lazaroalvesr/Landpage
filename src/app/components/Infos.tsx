@@ -27,7 +27,7 @@ function Demonstracao() {
             />
           </div>
         </div>
-        <div className='lg:ml-56 ml-12 mt-10'>
+        <div className='lg:ml-72 ml-12 mt-10'>
           <ButtonEncomendar />
         </div>
         <div className='max-w-xl m-auto w-12  flex lg:gap-32 gap-20 ml-5 lg:ml-56 mt-12'>

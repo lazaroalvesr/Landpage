@@ -9,7 +9,7 @@ function ButtonEncomendar() {
   return (
     <div>
       <div>
-        <Link href={whatsappLink} className='h-14 p-3 lg:w-[370px] w-80 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform flex items-center' target='_blank' rel='noopener noreferrer'>
+        <Link href={whatsappLink} className='h-14 p-3 lg:w-[370px] w-72 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform flex items-center' target='_blank' rel='noopener noreferrer'>
           <span className='pr-2'><ImCheckboxChecked color='#00ffff' /></span>
           <span className='text-gray-50 flex ml-2 lg:text-3xl text-xl'>Fazer um orçamento</span>
         </Link>
