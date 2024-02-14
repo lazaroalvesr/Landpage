@@ -30,7 +30,7 @@ function Demonstracao() {
         <div className='lg:ml-72 ml-12 mt-10'>
           <ButtonEncomendar />
         </div>
-        <div className='max-w-xl m-auto w-12  flex lg:gap-32 gap-20 ml-5 lg:ml-56 mt-12'>
+        <div className='max-w-xl m-auto w-12 flex lg:gap-32 gap-20 ml-2 lg:ml-56 mt-12'>
           <div className='flex items-center w-12'>
             <Image
               src="/img/seguro.png"

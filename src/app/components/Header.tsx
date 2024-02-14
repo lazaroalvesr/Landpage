@@ -58,7 +58,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="text-3xl lg:text-sm text-gray-900 font-semibold">
-                <Link href={'/'} className={`link ${pathname === '/SobreNos' ? 'active underline' : ''}`} onClick={handleItemClick}>
+                <Link href={'/NossosClientes'} className={`link ${pathname === '/SobreNos' ? 'active underline' : ''}`} onClick={handleItemClick}>
                   Nossos Clientes
                 </Link>
               </li>

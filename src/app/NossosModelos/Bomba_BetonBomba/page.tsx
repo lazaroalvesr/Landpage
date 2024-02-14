@@ -5,6 +5,7 @@ import Items from '@/app/components/Items';
 import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import { useState } from 'react';
+import Head from '@/app/components/Head';
 
 
 function NossosProdutos() {
@@ -42,6 +43,7 @@ function NossosProdutos() {
 
   return (
     <section className='max-w-5xl m-auto mt-20'>
+      <Head title="Betonbomba | Arruda Bombas" />
       <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0 gap-12'>
         <div className='mt-24'>
           <div className='lg:w-[600px] ml-5'>

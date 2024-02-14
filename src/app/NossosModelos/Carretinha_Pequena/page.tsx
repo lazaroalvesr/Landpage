@@ -5,6 +5,7 @@ import Items from '@/app/components/Items';
 import { v4 as uuidv4 } from 'uuid';
 import Image from 'next/image';
 import { useState } from 'react';
+import Head from '@/app/components/Head';
 
 function NossosProdutos() {
   const [imagemPrincipal, setImagemPrincipal] = useState('/img/img_pagina_inicial/BombaConcreto_Carretinha_pequena.png');
@@ -41,6 +42,7 @@ function NossosProdutos() {
 
   return (
     <section className='max-w-5xl m-auto mt-20'>
+      <Head title="Carretinha pequena | Arruda Bombas" />
       <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0 gap-12'>
         <div className='mt-24'>
           <div className='lg:w-[600px] w-80'>
