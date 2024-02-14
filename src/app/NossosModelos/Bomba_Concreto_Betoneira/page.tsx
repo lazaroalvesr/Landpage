@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 
 function NossosProdutos() {
-  const [imagemPrincipal, setImagemPrincipal] = useState('/img/BombaBetoneira/Bomba_Concreto_01.jpg  ');
+  const [imagemPrincipal, setImagemPrincipal] = useState('/img/BombaBetoneira/Bomba_Concreto_01.jpg');
 
   const items = [
     "200 bar de pressão",
