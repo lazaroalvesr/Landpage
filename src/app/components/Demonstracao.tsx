@@ -20,7 +20,7 @@ function Demonstracao() {
         </div>
         <div>
           <div className=''>
-            <div className='lg:w-[620px] w-96 ml-2 lg:ml-0'>
+            <div className='lg:w-[620px] w-96 ml-4 lg:ml-0'>
               <Image
                 src="/img/Bomba_Demonstração.jpg"
                 alt='Bomba P700'

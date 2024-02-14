@@ -7,9 +7,9 @@ function Demonstracao() {
     <section>
       <div className='max-w-4xl m-auto lg:mt-66 mt-40 '>
         <div className='text-center'>
-          <h1 className='lg:text-4xl text-3xl w-[400px] lg:w-full'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
+          <h1 className='lg:text-4xl text-3xl w-[390px] lg:w-full'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
         </div>
-        <div className='flex lg:flex-row flex-col ml-10 lg:ml-12 lg:gap-12 mt-12 justify-center'>
+        <div className='flex lg:flex-row flex-col ml-8 lg:ml-12 lg:gap-12 mt-12 justify-center'>
           <div className='lg:w-[440px] h-72 '>
             <Image
               src="/img/img_pagina_inicial/Bomba_Concreto_04.jpg"
