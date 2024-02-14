@@ -1,6 +1,4 @@
-'use client'
-
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 
@@ -19,7 +17,6 @@ function DuvidaEmpresa() {
               width={190}
               height={12}
             />
-
 
           </div>
 
