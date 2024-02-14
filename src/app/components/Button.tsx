@@ -1,28 +1,25 @@
-import Link from 'next/link'
-import React, { FormEvent } from 'react'
+import Link from 'next/link';
+import React from 'react';
+import { ImCheckboxChecked } from 'react-icons/im';
 
-interface WhatsAppProps {
+
+interface ButtonProps {
   itemName: string;
 }
 
-function WhatsAppButton({ itemName }: WhatsAppProps) {
-  const handleWhatsAppLink = (e: FormEvent) => {
-    e.preventDefault();
-    const phoneNumber = '5519974105318';
-    const message = encodeURIComponent(`Olá, tudo bem? Vim pelo site e gostaria de solicitar um orçamento para a ${itemName}. Obrigado!`); // Usando o itemName fornecido
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.location.href = whatsappUrl;
-  }
+function ButtonEncomendar({ itemName }: ButtonProps) {
+  const message = `Olá, tudo bem? Vim pelo site Arruda Bombas e gostaria de solicitar um orçamento da ${itemName}.`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
   return (
     <div>
       <div>
-        <Link className='w-60 text-center mt-6 lg:ml-2 ml-8 text-white p-4 rounded-md bg-blue-500' href="WhatsApp" target='_blank' onClick={handleWhatsAppLink}>
-          Encomende a sua!
+        <Link href={whatsappLink} className='w-60 text-center mt-6 lg:ml-2 ml-8 text-white p-4 rounded-md bg-blue-500 cursor-pointer' target='_blank' rel='noopener noreferrer'>
+          Encomende a sua
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default WhatsAppButton;
+export default ButtonEncomendar;

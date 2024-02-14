@@ -21,7 +21,7 @@ function Main() {
               </div>
               <ButtonEncomendar />
               <div>
-                <Link href="/img/Catálogo Arrudas_Bombas.pdf" >
+                <Link href="/img/Catálogo Arrudas_Bombas.pdf" target='_blank'>
                   <button className='bg-blue-500 rounded-md text-gray-50 p-4 w-72 mt-4'>Baixe nosso Catálogo</button>
                 </Link>
               </div>

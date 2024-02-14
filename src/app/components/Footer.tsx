@@ -6,15 +6,10 @@ import React, { useState, useEffect, FormEvent } from "react";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 export default function Footer() {
-  const [anoCriacao, setAnoCriacao] = useState("");
 
-  const handleWhatsAppLink = (e: FormEvent) => {
-    e.preventDefault();
-    const phoneNumber = '5519974105318';
-    const message = encodeURIComponent('Olá, Tudo bem? vim pelo site Arruda Bombas e gostaria de fazer um orçamento!');
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.location.href = whatsappUrl;
-  }
+  const [anoCriacao, setAnoCriacao] = useState("");
+  const message = 'Olá, tudo bem? Vim pelo site Arruda Bombas e gostaria de solicitar um orçamento.';
+  const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
     const obterAnoAtual = () => {
@@ -28,7 +23,7 @@ export default function Footer() {
   return (
     <footer className=" pb-20 relative pt-32 text-center lg:pb-4 dark:text-gray-800 
     text-gray-900">
-      <Link onClick={handleWhatsAppLink} href="WhatsApp">
+      <Link href={whatsappLink} target='_blank' rel='noopener noreferrer'>
         <div className=" lg:right-10 right-7 fixed bottom-8 bg-white rounded-xl w-15 ">
           <Image
             src="/img/Icone_Whatsapp.png"
@@ -39,7 +34,8 @@ export default function Footer() {
         </div>
       </Link>
       <div>
-        <p className="-pt-32">© {anoCriacao} <Link href="https://www.lazaroalvesr.com/" target="_blank">Lázaro Alves R</Link> | Todos os Direitos Reservados.</p>
+        <p className="-pt-32">{anoCriacao} © Arruda Bombas | Todos os Direitos Reservados.</p>
+        <p className="pt-4">Feito por |  <Link href="https://www.lazaroalvesr.com/" target="_blank">Lázaro Alves R</Link></p>
       </div>
     </footer>
   );

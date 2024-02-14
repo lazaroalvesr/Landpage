@@ -1,31 +1,21 @@
-'use client'
-
-import Link from 'next/link'
-import React, { FormEvent } from 'react'
+import Link from 'next/link';
+import React from 'react';
 import { ImCheckboxChecked } from 'react-icons/im';
 
 function ButtonEncomendar() {
-
-  const handleWhatsAppLink = (e: FormEvent) => {
-    e.preventDefault();
-    const phoneNumber = '5519974105318';
-    const message = encodeURIComponent('Olá, tudo bem? Vim pelo site Arruda Bombas e gostaria de solicitar um orçamento.');
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.location.href = whatsappUrl;
-  }
-
+  const message = 'Olá, tudo bem? Vim pelo site Arruda Bombas e gostaria de solicitar um orçamento.';
+  const whatsappLink = `https://api.whatsapp.com/send?phone=5519974105318&text=${encodeURIComponent(message)}`;
 
   return (
     <div>
       <div>
-        <button className='h-14 p-3 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform'>
-          <Link onClick={handleWhatsAppLink} href="WhatsApp" className='text-gray-50 flex ml-2 lg:text-2xl' target='_blank'>
-            <span className='pr-2 mt-1'><ImCheckboxChecked color='#00ffff' /></span>
-            Sim! Eu quero fazer um orçamento.</Link>
-        </button>
+        <Link href={whatsappLink} className='h-14 p-3 w-80 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform flex items-center' target='_blank' rel='noopener noreferrer'>
+          <span className='pr-2'><ImCheckboxChecked color='#00ffff' /></span>
+          <span className='text-gray-50 flex ml-2 lg:text-2xl'>Fazer um orçamento</span>
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default ButtonEncomendar
+export default ButtonEncomendar;
