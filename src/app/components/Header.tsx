@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
+import { IoCloseSharp } from "react-icons/io5";
 
 export default function Header() {
 
@@ -33,9 +34,9 @@ export default function Header() {
               />
               <p className="pl-2 text-2xl font-semibold whitespace-nowrap">Arruda Bombas</p>
             </Link>
-            <div className="lg:hidden absolute right-5 top-7 ">
+            <div className="lg:hidden absolute right-5 top-7">
               <button onClick={() => toggle()} >
-                <CiMenuFries size={24} />
+                {ativaMenu ? <IoCloseSharp size={24} color="black" /> : <CiMenuFries size={24} color="black" />}
               </button>
             </div>
           </div>

@@ -45,7 +45,7 @@ function NossosProdutos() {
     <section className='max-w-5xl m-auto mt-20'>
       <div className='grid lg:grid-cols-2 grid-cols-1 ml-9 lg:ml-0 gap-12'>
         <div className='mt-24'>
-          <div className='lg:w-[750px] -ml-28 '>
+          <div className='lg:w-[750px] -ml-6 pr-2 lg:pr-2 lg:-ml-28'>
             <Image
               src={imagemPrincipal}
               alt="P 700"
