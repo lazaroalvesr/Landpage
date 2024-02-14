@@ -19,7 +19,7 @@ function ButtonEncomendar() {
     <div>
       <div>
         <button className='h-14 p-3 bg-blue-500 rounded-md mt-9 hover:scale-105 transition-transform'>
-          <Link onClick={handleWhatsAppLink} href="WhatsApp" className='text-gray-50 flex ml-2 lg:text-2xl'>
+          <Link onClick={handleWhatsAppLink} href="WhatsApp" className='text-gray-50 flex ml-2 lg:text-2xl' target='_blank'>
             <span className='pr-2 mt-1'><ImCheckboxChecked color='#00ffff' /></span>
             Sim! Eu quero fazer um orçamento.</Link>
         </button>
