@@ -7,9 +7,9 @@ function Demonstracao() {
     <section>
       <div className='max-w-4xl m-auto lg:mt-66 mt-40 '>
         <div className='text-center'>
-          <h1 className='lg:text-4xl text-3xl w-[390px] lg:w-full'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
+          <h1 className='lg:text-4xl text-3xl w-[390px] md:w-full lg:w-full'><span className='text-blue-500'>Solidez Sob Encomenda</span> Bombas de Concreto Adaptadas para Cada Etapa de sua Obra</h1>
         </div>
-        <div className='flex lg:flex-row flex-col ml-8 lg:ml-12 lg:gap-12 mt-12 justify-center'>
+        <div className='flex lg:flex-row md:flex-row flex-col ml-8 lg:ml-12 md:gap-12 lg:gap-12 mt-12 justify-center'>
           <div className='lg:w-[440px] h-72 '>
             <Image
               src="/img/img_pagina_inicial/Bomba_Concreto_04.jpg"
@@ -27,11 +27,11 @@ function Demonstracao() {
             />
           </div>
         </div>
-        <div className='lg:ml-72 ml-12 mt-10'>
+        <div className='lg:ml-72 ml-12 md:ml-72 md:mt-24 lg:mt-0 mt-10'>
           <ButtonEncomendar />
         </div>
-        <div className='max-w-xl m-auto w-12 flex lg:gap-32 gap-20 ml-2 lg:ml-56 mt-12'>
-          <div className='flex items-center w-12'>
+        <div className='max-w-xl m-auto w-12 flex lg:gap-32 gap-20 ml-2 lg:ml-56 mt-12 md:ml-60'>
+          <div className='flex items-center justify-center w-12'>
             <Image
               src="/img/seguro.png"
               alt='Compra Segura'

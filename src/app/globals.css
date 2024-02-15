@@ -8,6 +8,12 @@
   }
 }
 
+@media (max-width: 840px) {
+  .h-screen img {
+    height: 620px; /* Defina a altura desejada para dispositivos móveis */
+  }
+}
+
 .slide {
   transition: transform 9s cubic-bezier(1.4, 0, 0.2, 1);
 }

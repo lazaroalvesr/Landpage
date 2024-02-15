@@ -5,7 +5,7 @@ function FormasDePagamento() {
   return (
     <section>
       <div className='max-w-4xl flex justify-center m-auto mt-40 lg:mt-60'>
-        <div className='flex lg:flex-row flex-col lg:gap-72 gap-16'>
+        <div className='flex lg:flex-row flex-col md:flex-row lg:gap-72 gap-16'>
           <div>
             <h1 className='text-xl font-bold pb-4'>Formas de Pagamento</h1>
             <Image
