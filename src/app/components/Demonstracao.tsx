@@ -4,7 +4,7 @@ import React from 'react'
 function Demonstracao() {
   return (
     <section>
-      <div className='max-w-4xl m-auto lg:mt-28 md:-mt-72 -mt-28 flex lg:flex-row flex-col gap-40'>
+      <div className='max-w-4xl m-auto lg:mt-16 md:-mt-72 flex lg:flex-row flex-col gap-40'>
         <div className='lg:w-[400px] text-center'>
           <h1 className='lg:text-4xl text-2xl lg:w-[400px] '><span className='text-blue-500'>EXCELÊNCIA GARANTIDA</span> BOMBAS DE CONCRETO PARA OBRAS DE QUALIDADE</h1>
           <p className='pt-12 text-2xl'>Bomba de Concreto</p>
