@@ -9,7 +9,7 @@ function FaleConosco() {
       </div>
       <div className='max-w-6xl m-auto mt-32'>
         <p><span>Email: </span>pedrohenriquearrudaa@gmail.com</p>
-        <p><span>Celular: </span>(11) 999-9999999</p>
+        <p><span>Celular: </span>(19) 97410-5318</p>
       </div>
     </div>
   )
